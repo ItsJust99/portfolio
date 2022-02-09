@@ -26,7 +26,7 @@
 .NeonText{
     position: relative;
     width: 100%;
-    height: 5%;
+    margin-top: -7%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,5 +71,10 @@
 @media screen and (max-width: 750px) {
     .NeonText h2{
         font-size: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .NeonText h2{
+        font-size: 35px;
     }
 }
