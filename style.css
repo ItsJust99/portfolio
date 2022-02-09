@@ -46,36 +46,30 @@
 @media screen and (max-width: 1500px) {
     .NeonText h2{
         font-size: 90px;
-        font-weight: 600;
     }
 }
 @media screen and (max-width: 1300px) {
     .NeonText h2{
         font-size: 80px;
-        font-weight: 600;
     }
 }
 @media screen and (max-width: 1100px) {
     .NeonText h2{
         font-size: 70px;
-        font-weight: 600;
     }
 }
 @media screen and (max-width: 1000px) {
     .NeonText h2{
         font-size: 60px;
-        font-weight: 600;
     }
 }
 @media screen and (max-width: 900px) {
     .NeonText h2{
         font-size: 50px;
-        font-weight: 600;
     }
 }
 @media screen and (max-width: 750px) {
     .NeonText h2{
         font-size: 40px;
-        font-weight: 600;
     }
 }
