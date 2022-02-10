@@ -172,3 +172,8 @@ body{
         font-size: 25px;
     }
 }
+@media screen and (max-width: 347px) {
+    .NeonText h2{
+        font-size: 20px;
+    }
+}
