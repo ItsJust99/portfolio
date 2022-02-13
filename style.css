@@ -132,12 +132,12 @@ header{
     float: right;
     margin-right: 5%;
     margin-top: 0.5%;
-    font-size: 260%;
+    font-size: 200%;
 }
 .Taal_Select{
     float: right;
     margin-top: 4%;
-    margin-right: -7.7%;
+    margin-right: -7.5%;
     transform: translate(-50%, -50%);
 }
   
@@ -151,15 +151,16 @@ header{
     -webkit-appearance: button;
     appearance: button;
     outline: none;
+    font-size: 90%;
 }
 .Taal_Select :hover{
     background: #3d3d3d;
 }
 img{
     float: right;   
-    margin-right: -8.4%;
-    margin-top: 2.9%;
-    width: 50px;
+    margin-right: -8.5%;
+    margin-top: 2.8%;
+    width: 40px;
 }
 
 
