@@ -5,14 +5,18 @@
        -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
 }
 
 body{
     display: flex;
     min-height: 100vh;
-    background-color: #000;
+    background-color: #2f2f2f;
     overflow: hidden;
 }
+/*Start Page index.html*/
 .Gradient {
 	background: linear-gradient(-45deg, #140b2f, #511c75, #075163, #072763);
 	background-size: 400% 400%;
@@ -115,12 +119,52 @@ body{
 .NeonButton a:focus::after{
     opacity: 1;
 }
+/*End Page index.html*/
+/*Start Page MainPage*/
+header{
+    position: fixed;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 12%;
+}
+.SelectText{
+    float: right;
+    margin-right: 5%;
+    margin-top: 0.5%;
+    font-size: 260%;
+}
+.Taal_Select{
+    float: right;
+    margin-top: 4%;
+    margin-right: -7.7%;
+    transform: translate(-50%, -50%);
+}
+  
+.Taal_Select select {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 8%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+.Taal_Select :hover{
+    background: #3d3d3d;
+}
+img{
+    float: right;   
+    margin-right: -8.4%;
+    margin-top: 2.9%;
+    width: 50px;
+}
 
 
-
-
-
-
+/*End Page MainPage*/
+/*Start ScreenSizing*/
 @media screen and (max-width: 1500px) {
     .NeonText h2{
         font-size: 90px;
@@ -187,3 +231,4 @@ body{
         font-size: 15px;
     }
 }
+/*End ScreenSizing*/
