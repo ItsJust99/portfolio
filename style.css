@@ -131,16 +131,14 @@ header{
 .SelectText{
     float: right;
     margin-right: 5%;
-    margin-top: 0.5%;
-    font-size: 200%;
+    margin-top: 1px;
+    font-size: 220%;
 }
 .Taal_Select{
-    float: right;
-    margin-top: 4%;
-    margin-right: -7.5%;
-    transform: translate(-50%, -50%);
+    width: 20px;
+    margin-top: 20px;
+    margin-left: 84.5%;
 }
-  
 .Taal_Select select {
     background-color: #2f2f2f;
     color: white;
@@ -151,16 +149,24 @@ header{
     -webkit-appearance: button;
     appearance: button;
     outline: none;
-    font-size: 90%;
 }
 .Taal_Select :hover{
     background: #3d3d3d;
 }
-img{
-    float: right;   
-    margin-right: -8.5%;
-    margin-top: 2.8%;
-    width: 40px;
+.flex-container {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-container p {
+    background-color: none;
+    margin: 10px;
+    line-height: 75px;
+    font-size: 38px;
+}
+.flex-container img{ 
+    width: 50px;
+    margin-left: 140%;
 }
 
 
