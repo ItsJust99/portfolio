@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="" href=""/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <select id="mySelection">
+            <option value="0" href="">Englisch</option>
+            <option value="x" href="Deutsch.html">Deutsch</option>
+            <option value="y" href="Nederlands.html">Nederlands</option>
+        </select>
+            
+        <script>
+            document.getElementById('mySelection').onchange = function() {
+                window.location.href = this.children[this.selectedIndex].getAttribute('href');
+            }
+        </script>
+    </header>
+</body>
+</html>

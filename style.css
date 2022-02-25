@@ -128,45 +128,19 @@ header{
     width: 100%;
     height: 110px;
 }
-.SelectText{
-    margin-left: 86.5%;
-    margin-top: 5px;
-    font-size: 220%;
-}
-.Taal_Select{
-    width: 20px;
-    margin-top: 20px;
-    margin-left: 84.5%;
-}
-.Taal_Select select {
+#mySelection {
+    position: fixed;
     background-color: #2f2f2f;
-    color: white;
-    padding: 8%;
-    border: none;
-    font-size: 20px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    -webkit-appearance: button;
-    appearance: button;
-    outline: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 15px;
+    left: 10px;
+    top: 20px;
 }
-.Taal_Select :hover{
+#mySelection :hover{
     background: #3d3d3d;
 }
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 5%;
-}
-.flex-container p {
-    background-color: none;
-    margin: 10px;
-    line-height: 75px;
-    font-size: 38px;
-}
-.flex-container img{ 
-    width: 50px;
-    margin-left: 140%;
-}
+
 
 
 /*End Page MainPage*/
