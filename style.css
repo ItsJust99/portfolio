@@ -134,13 +134,13 @@ header{
     padding: 5px;
     color: #fff;
     font-size: 15px;
-    left: 10px;
     top: 20px;
 }
-#mySelection :hover{
-    background: #3d3d3d;
+.vlag{
+    width: 2.5%;
+    margin-left: 6.5%;
+    margin-top: 14px;
 }
-
 
 
 /*End Page MainPage*/
