@@ -128,18 +128,22 @@ header{
     width: 100%;
     height: 110px;
 }
+.container{
+    margin-top: 5px;
+    margin-left: 90%;
+}
 #mySelection {
     position: fixed;
     background-color: #2f2f2f;
     padding: 5px;
     color: #fff;
     font-size: 15px;
-    top: 20px;
+    top: 45px;
 }
 .vlag{
-    width: 2.5%;
-    margin-left: 6.5%;
-    margin-top: 14px;
+    width: 25.5%;
+    margin-left: 61%;
+    margin-top: -3px;
 }
 
 
