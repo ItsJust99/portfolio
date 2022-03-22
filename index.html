@@ -1,23 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="" href=""/>
-    <title>Porfolio</title>
+    <link rel="stylesheet" href="styling.css">
+    <title>Portfolio NL</title>
 </head>
-<body class="Gradient">
-    <div class="NeonText">
-        <h2>Welcome to Samantha's portfolio</h2>
-        
-    </div>
-
-</body>
 <body>
-    <div class="NeonButton" color="#fff">
-        <a href="Nederlands.html">Click Here</a>
-    </div>
+    <h1 class="naam">Samantha van der Heijden</h1>
+    <section class="container">
+        <select id="mySelection">
+            <option value="0" href="">Nederlands</option>
+            <option value="x" href="PortfolioEN.html">English</option>
+            <option value="y" href="PortfolioDE.html">Deutsch</option>
+        </select>
+    </section>
+    <script>
+        document.getElementById('mySelection').onchange = function() {
+            window.location.href = this.children[this.selectedIndex].getAttribute('href');
+        }
+    </script>
+    <section class="shortMe">
+        <h1>Kort over mij!</h1> <br>
+        <p>Ik ben </p>
+    </section>
 </body>
 </html>
