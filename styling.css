@@ -35,3 +35,12 @@
     position: absolute;
     margin-top: 200px;
 }
+.shortMe h1{
+    font-size: 32px;
+}
+.shortMe p{
+    font-size: 26px;
+}
+.BG1 img{
+    width: 30%;
+}
