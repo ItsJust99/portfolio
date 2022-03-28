@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Samantha's Portfolio</title>
 </head>
 <body>
@@ -24,5 +26,95 @@
             </ul>
         </nav>
     </header>
+    <!--Begin eerste-->
+    <!--Einde eerste-->
+    <!--Begin slider-->
+    <section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <!--Project 1-->
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/tijdelijkPiano.PNG" alt="Unity Piano">
+                        </div>
+
+                        <div class="name-project">
+                            <span class="name">Piano Madness</span>
+                            <span class="project">piano || Unity en C#</span>
+                        </div>
+
+                        <div class="button">
+                            <button class="moreInfo">Meer info</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Project 2-->
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/tijdelijkTodo.PNG" alt="Todo">
+                        </div>
+
+                        <div class="name-project">
+                            <span class="name">Todo app/web</span>
+                            <span class="project">Todo || jquery, java script, <br> html, css en Unity,C#</span>
+                        </div>
+
+                        <div class="button">
+                            <button class="moreInfo">Meer info</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Project 3-->
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/ComingSoon.jpg" alt="komt binnekort">
+                        </div>
+
+                        <div class="name-project">
+                            <span class="name">Komt binnekort</span>
+                            <span class="project">... || Unreal Engine</span>
+                        </div>
+
+                        <div class="button">
+                            <button class="moreInfo">Meer info</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+        
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
+    <!--Einde slider-->
+    <!--Begin tweede-->
+    <!--Einde tweede-->
+    <!--Begin contact-->
+    <!--Einde contact-->
 </body>
 </html>
