@@ -80,6 +80,19 @@ nav ul ul li a{
 /*Eind header*/
 
 /*Begin eerste */
+.text{
+    margin-top: 100px;
+    margin-left: 20%;
+    position: absolute;
+}
+.imageMe{
+    margin-top: 100px;
+    margin-left: 55%;
+    position: relative;
+}
+.imageMe img{
+    width: 50%;
+}
 /*Eind eerste*/
 
 /*Begin slider */
