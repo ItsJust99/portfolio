@@ -96,6 +96,10 @@ nav ul ul li a{
 /*Eind eerste*/
 
 /*Begin slider */
+.ps{
+    float: right;
+    margin-bottom: 500px;
+}
 .swiper{
     width: 950px;
 }
