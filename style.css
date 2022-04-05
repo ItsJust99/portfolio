@@ -97,8 +97,9 @@ nav ul ul li a{
 
 /*Begin slider */
 .ps{
-    float: right;
-    margin-bottom: 500px;
+    margin-top: 140px;
+    margin-left: 46%;
+    position: absolute;
 }
 .swiper{
     width: 950px;
