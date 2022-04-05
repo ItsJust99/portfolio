@@ -245,9 +245,4 @@ section .card .image img{
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#0492cf);
 }
-/* firefox */
-html{
-    scrollbar-width: normal;
-    scrollbar-color: linear-gradient(transparent,#00b3ff);
-}
 /*Eind custom scrollbar*/
