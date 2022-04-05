@@ -23,7 +23,8 @@ body{
     justify-content: center;
     align-items: center;
     background: linear-gradient(-45deg, #140b2f, #511c75, #075163, #072763);
-	background-size: 175% 175%;
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
 }
 .loader > img {
     width: 800px;
@@ -37,6 +38,17 @@ body{
         opacity: 0;
         visibility: hidden;
     }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 /*Eind load screen*/
 
