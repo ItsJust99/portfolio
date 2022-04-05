@@ -56,7 +56,7 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 nav{
     background: #0f0e0e;
@@ -233,3 +233,21 @@ section .card .image img{
 
 /*Begin contact */
 /*Eind contact*/
+
+/*Begin custom scrollbar */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#00b3ff);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#0492cf);
+}
+/* firefox */
+html{
+    scrollbar-width: normal;
+    scrollbar-color: linear-gradient(transparent,#00b3ff);
+}
+/*Eind custom scrollbar*/
