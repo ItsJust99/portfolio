@@ -236,13 +236,50 @@ section .card .image img{
 
 /*Begin custom scrollbar */
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 0;
 }
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent,#00b3ff);
-    border-radius: 6px;
+#scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
 }
-::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(transparent,#0492cf);
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00b3ff);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(55deg);
+    }
+}
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #008aff,#00b3ff);
+    filter: blur(10px);
+}
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00b3ff);
+    filter: blur(30px);
 }
 /*Eind custom scrollbar*/
