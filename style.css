@@ -240,32 +240,61 @@ section .card .image img{
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 30; /* Sit on top */
+    padding-top: 120px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
   
   /* Modal Content */
 .modal-content {
-    background-color: #000;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
+
 }
-  
+.modal-content p{
+    color: #000;
+    font-size: 18px;
+    margin-left: 29%;
+    margin-top: 150px;
+    z-index: 2;
+    position: fixed;
+}
+.modal-content img{
+    width: 55%;
+    margin-left: 25%;
+}
+.EnvoMail{
+    position: fixed;
+    font-size: 18px;
+    margin-left: 34%;
+    margin-top: 240px;
+    z-index: 2;
+}
+.EnvoMail span{
+    background-color: #000;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+}
+.EnvoMail span:hover{
+    background-color: #1b1b1b;
+    color: #11a8e9;
+}
   /* The Close Button */
 .close {
     color: #0492cf;
     float: right;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
+    z-index: 2;
 }
   
 .close:hover,
