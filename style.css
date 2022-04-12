@@ -234,7 +234,7 @@ section .card .image img{
     margin-top: -50px;
 }
 .balkSkills{
-    max-width: 1000px;
+    max-width: 500px;
     margin: 60px auto;
     margin-left: 10%;
     padding: 20px;
@@ -326,10 +326,11 @@ section .card .image img{
     }
 }
 .balkSkillsS{
-    max-width: 1000px;
+    max-width: 500px;
     margin: 60px auto;
-    margin-left: 10%;
     padding: 20px;
+    margin-left: 53%;
+    margin-top: -590px;
 }
 .balkSkillsS li{
     margin: 20px 0;
