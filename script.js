@@ -55,3 +55,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//popup project2
+function togglePopup(){
+  document.getElementById("popup1").classList.toggle("active");
+}

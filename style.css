@@ -226,6 +226,67 @@ section .card .image img{
 .button button:hover{
     background: #0492cf;
 }
+/*project2*/
+.popup .overlayP2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .contentP2{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 900px;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .contentP2 h1{
+    text-align: center;
+}
+.popup .contentP2 img{
+    width: 48%;
+}
+.popup .contentP2 .apptodo{
+    width: 25%;
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: #0492cf;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+.popup.active .overlayP2{
+    display: block;
+}
+.popup.active .contentP2{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: #11a8e9;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*end project2*/
+
 /*Eind slider*/
 
 /*Begin tweede */
@@ -278,7 +339,7 @@ section .card .image img{
     animation: Unreal 3s;
 }
 .C{
-    width: 64%;
+    width: 40%;
     animation: C 3s;
 }
 .html{

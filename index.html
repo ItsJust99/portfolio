@@ -23,8 +23,10 @@
                 <li>
                     <a href="#">Taal</a>
                     <ul>
-                        <li><a href="PortfolioDE.html">Deutsch</a></li>
-                        <li><a href="PortfolioEN.html">English</a></li>
+                        <li><a href="#">bald</a></li>
+                        <li><a href="#">coming soon</a></li>
+                        <!-- <li><a href="PortfolioDE.html">Deutsch</a></li>
+                        <li><a href="PortfolioEN.html">English</a></li> -->
                         <li><a href="index.html">Nederlands</a></li>
                     </ul>
                 </li>
@@ -86,7 +88,7 @@
                         </div>
 
                         <div class="button">
-                            <button class="moreInfo">Meer info</button>
+                            <button onclick="togglePopup()" class="moreInfo">Meer info</button>
                         </div>
                     </div>
                 </div>
@@ -113,6 +115,28 @@
         <div class="swiper-button-prev" style="margin-top: 650px; margin-left: 50px;"></div>
         <div class="swiper-pagination"></div>   
     </section>
+    <!--project2-->
+    <div class="popup" id="popup1">
+        <div class="overlayP2"></div>
+        <div class="contentP2">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Todo app/web</h1> <br><br>
+            <img src="images/webTodo.PNG" alt="todoweb"> <br>
+            <p class="web">De webversie doet het helemaal en is gemaakt met: <br>
+            jQuery, JavaScript, html, en css.<br>
+            Ik heb deze todo app gemaakt toen ik in leerjaar 1 zat.<br>
+            je kan de er todo's bijvoegen, aanpassen, afvinken en verwijderen. <br><br>
+            </p>
+            <div class="apptodo">
+                <img src="images/appTodo.PNG" alt="todoapp"><br>
+            </div>
+            <p>De app versie is nog niet werkend <br> maar dat is iets wat ik mijn eigen tijd nog afmaak.
+            De App versie is gemaakt met: Unity en C#. <br>
+            Deze app heb ik gemaakt in mijn 2e leerjaar. <br>
+            Het werkt het zelfde dan de webversie maar je kan de todo niet aanpassen.</p>
+        </div>
+    </div>
+    <!--end2-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--Einde slider-->
     <!--Begin tweede-->
@@ -127,7 +151,7 @@
         <li><h3>Unreal Engine (20% pas begonnen)</h3>
             <span class="bar"><span class="Unreal"></span></span>
         </li>
-        <li><h3>C# (64%)</h3>
+        <li><h3>C# (40%)</h3>
             <span class="bar"><span class="C"></span></span>
         </li>
         <li><h3>html (88%)</h3>
