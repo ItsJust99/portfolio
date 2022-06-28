@@ -60,3 +60,7 @@ window.onclick = function(event) {
 function togglePopup(){
   document.getElementById("popup1").classList.toggle("active");
 }
+//popup project4
+function togglePopup4(){
+  document.getElementById("popup4").classList.toggle("active");
+}
