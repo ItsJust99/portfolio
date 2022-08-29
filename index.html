@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Samantha's Portfolio</title>
     <link rel="icon" type="image/png" href="images/iconWebsite.PNG"/>
 </head>
@@ -25,241 +25,186 @@
                     <ul>
                         <li><a href="#">bald</a></li>
                         <li><a href="#">coming soon</a></li>
-                        <!-- <li><a href="PortfolioDE.html">Deutsch</a></li>
+                    <!--<li><a href="PortfolioDE.html">Deutsch</a></li>
                         <li><a href="PortfolioEN.html">English</a></li> -->
                         <li><a href="index.html">Nederlands</a></li>
                     </ul>
                 </li>
-                <li><a id="myBtn">Contact</a></li>
+                <li><a href="mailto:sa.van.der.heijden@sintlucasedu.nl">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!--Begin eerste-->
-    <div class="begin">
-        <div class="text">
-            <div class="text-content">
-                <h1>Samantha van der Heijden <br>
-                    Software Developer <br> <br>
-                </h1>
-                <p>Ik ben Samantha 18 jaar, <br>
-                    en doe de opleiding Software develoment. <br>
-                    Zit in het 2e jaar van het SintLucas. <br>
-                    Vooral ben ik gericht om games te maken. <br>
-                    En ik spreek 3 talen: Nederlands, Engels en Duits.</p>
-            </div>
-        </div>
-        <div class="imageMe">
-            <img src="images/profielfoto.jpeg" alt="profiel foto">
-        </div>
-    </div>
-    <!--Einde eerste-->
-    <!--Begin slider-->
-    <span class="ps"><h1>Projecten</h1></span>
-    <section>
-        <div class="swiper mySwiper container">
-            <div class="swiper-wrapper content">
-                <!--Project 1-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="images/tijdelijkPiano.PNG" alt="Unity Piano">
-                        </div>
-
-                        <div class="name-project">
-                            <span class="name">Piano Madness</span>
-                            <span class="project">piano || Unity en C#</span>
-                        </div>
-
-                        <div class="button"><a href="Piano.html">
-                            <button class="moreInfo">Meer info</button>
-                        </a></div>
-                    </div>
-                </div>
-                <!--Project 2-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="images/tijdelijkTodo.PNG" alt="Todo">
-                        </div>
-
-                        <div class="name-project">
-                            <span class="name">Todo app/web</span>
-                            <span class="project">Todo || jquery, java script, <br> html, css en Unity,C#</span>
-                        </div>
-
-                        <div class="button">
-                            <button onclick="togglePopup()" class="moreInfo">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Project 3-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="images/ComingSoon.jpg" alt="komt binnekort">
-                        </div>
-
-                        <div class="name-project">
-                            <span class="name">Komt binnekort</span>
-                            <span class="project">... || Unreal Engine</span>
-                        </div>
-
-                        <div class="button">
-                            <button class="moreInfo">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Project 4-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="images/Tank2.PNG" alt="AR Tank Game">
-                        </div>
-
-                        <div class="name-project">
-                            <span class="name">AR Tank Game</span>
-                            <span class="project">AR Game || Unity en C#</span>
-                        </div>
-
-                        <div class="button">
-                            <button onclick="togglePopup4()" class="moreInfo">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Project 5-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="images/ComingSoon.jpg" alt="komt binnekort">
-                        </div>
-
-                        <div class="name-project">
-                            <span class="name">Komt binnekort</span>
-                            <span class="project">... || Unity</span>
-                        </div>
-
-                        <div class="button">
-                            <button class="moreInfo">Meer info</button>
-                        </div>
-                    </div>
+    <main class="main">
+        <!--Begin home-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="images/profielfoto.jpeg" alt="" class="home__img">
+                <div class="home__date">
+                    <h1 class="home__title">Samantha van der Heijden</h1>
+                    <h2 class="home__subtitle">Software Developer</h2>
+                    <p class="home__description">Ik ben Samantha 18 jaar, <br>
+                        en doe de opleiding Software develoment. <br>
+                        Zit in het 3e jaar van het SintLucas. <br>
+                        Vooral ben ik gericht om games te maken. <br>
+                        En ik spreek 3 talen: Nederlands, Engels en Duits.
+                    </p>
+                    <a href="#meerInfo" class="button">Meer over mij</a>
                 </div>
             </div>
-        </div> 
-        <div class="swiper-button-next" style="margin-top: 825px; margin-right: 50px;"></div>
-        <div class="swiper-button-prev" style="margin-top: 825px; margin-left: 50px;"></div>
-        <div class="swiper-pagination"></div>   
-    </section>
-    <!--project2-->
-    <div class="popup" id="popup1">
-        <div class="overlayP2"></div>
-        <div class="contentP2">
-            <div class="close-btn" onclick="togglePopup()">&times;</div>
-            <h1>Todo app/web</h1> <br><br>
-            <img src="images/webTodo.PNG" alt="todoweb"> <br>
-            <p class="web">De webversie doet het helemaal en is gemaakt met: <br>
-            jQuery, JavaScript, html, en css.<br>
-            Ik heb deze todo app gemaakt toen ik in leerjaar 1 zat.<br>
-            je kan de er todo's bijvoegen, aanpassen, afvinken en verwijderen. <br><br>
-            </p>
-            <div class="apptodo">
-                <img src="images/appTodo.PNG" alt="todoapp"><br>
+        </section>
+        <!--Einde home-->
+        <!--Begin Projecten-->
+
+        <section class="work section" id="work">
+            <h2 data heading="My Portfolio"class="section__title">Projecten</h2>
+            <div class="work__filters">
+                <span class="work_item active-work" data-filter="all">Alles</span>
+                <span class="work_item" data-filter=".web">Web</span>
+                <span class="work_item" data-filter=".app">App</span>
+                <span class="work_item" data-filter=".games">Games</span>
             </div>
-            <p>De app versie is nog niet werkend <br> maar dat is iets wat ik mijn eigen tijd nog afmaak.
-            De App versie is gemaakt met: Unity en C#. <br>
-            Deze app heb ik gemaakt in mijn 2e leerjaar. <br>
-            Het werkt het zelfde dan de webversie maar je kan de todo niet aanpassen.</p>
+            <div class="work__conatiner container grid">
+                <div class="con">
+                <div class="work__card mix web">
+                    <img src="images/pmhnqz.jpg" alt="webTodo" class="work__img">
+                    <h3 class="work__title">Todo Web versie</h3>
+                    <span class="work__button">Lees meer
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Todo werkende website</h3>
+                        <p class="details__description">
+                            Lorem ipsum, dolor sit amet consecterur adipiscihkdf elit.
+                            Earum impedit voluptatiobus minima.
+                        </p>
+                        <ul class="details__info">
+                            <li>Wanneer - <span>mbo leerjaar 1</span></li>
+                            <li>Met wat - <span>jQuery, JavaScript, html, en css.</span></li>
+                            <li>??? - <span></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix games">
+                    <img src="images/pmhnqz.jpg" alt="tank" class="work__img">
+                    <h3 class="work__title">Tank Game</h3>
+                    <span class="work__button">Lees meer
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Mobile AR Tank Game</h3>
+                        <p class="details__description">
+                            Lorem ipsum, dolor sit amet consecterur adipiscihkdf elit.
+                            Earum impedit voluptatiobus minima.
+                        </p>
+                        <ul class="details__info">
+                            <li>Wanneer - <span>mbo eind leerjaar 2</span></li>
+                            <li>Met wat - <span>Unity en C#</span></li>
+                            <li>??? - <span></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="images/pmhnqz.jpg" alt="AppTodo" class="work__img">
+                    <h3 class="work__title">Todo App</h3>
+                    <span class="work__button">Lees meer
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Todo App</h3>
+                        <p class="details__description">
+                            Lorem ipsum, dolor sit amet consecterur adipiscihkdf elit.
+                            Earum impedit voluptatiobus minima.
+                        </p>
+                        <ul class="details__info">
+                            <li>Wanneer - <span>mbo leerjaar 2</span></li>
+                            <li>Met wat - <span>Unity en C#</span></li>
+                            <li>??? - <span></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix game">
+                    <img src="images/pmhnqz.jpg" alt="piano" class="work__img">
+                    <h3 class="work__title">Piano Madness</h3>
+                    <span class="work__button">Lees meer
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Piano Madness</h3>
+                        <p class="details__description">
+                            Lorem ipsum, dolor sit amet consecterur adipiscihkdf elit.
+                            Earum impedit voluptatiobus minima.
+                        </p>
+                        <ul class="details__info">
+                            <li>Wanneer - <span>mbo leerjaar 1</span></li>
+                            <li>Met wat - <span>Unity en C#</span></li>
+                            <li>??? - <span></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix games">
+                    <img src="images/pmhnqz.jpg" alt="Turtle Dash" class="work__img">
+                    <h3 class="work__title">Turtle Dash</h3>
+                    <span class="work__button">Lees meer
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Turtle Dash Arcade game</h3>
+                        <p class="details__description">
+                            Lorem ipsum, dolor sit amet consecterur adipiscihkdf elit.
+                            Earum impedit voluptatiobus minima.
+                        </p>
+                        <ul class="details__info">
+                            <li>Wanneer - <span>mbo eind leerjaar 2</span></li>
+                            <li>Met wat - <span>Unity C#</span></li>
+                            <li>??? - <span></span></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section> 
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="images/pmhnqz.jpg" alt="" class="portfolio__popup-img">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle">Arcade Game</div>
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">Turtle Dash</h3>
+                        <p class="details__description">
+                            Lorem ipsum, dolor sit amet consecterur adipiscihkdf elit.
+                            Earum impedit voluptatiobus minima.
+                        </p>
+                        <ul class="details__info">
+                            <li>Wanneer - <span>mbo eind leerjaar 2</span></li>
+                            <li>Met wat - <span>Unity C#</span></li>
+                            <li>??? - <span></span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--end2-->
-    <!--project4-->
-    <div class="popup4" id="popup4">
-        <div class="overlayP4"></div>
-        <div class="contentP4">
-            <div class="close-btn" onclick="togglePopup4()">&times;</div>
-            <h1>AR Tank Game</h1> <br><br>
-            
-        </div>
-    </div>
-    <!--end4-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--Einde slider-->
-    <!--Begin tweede-->
-    <div class="tweede">
-        <h1 class="titleM">Vaardigheden</h1>
-    </div>
-    <div class="balkSkills test1">
-        <h2>Hard skills</h2>
-        <li><h3>Unity (61% kan meer dan de bazis)</h3>
-            <span class="bar"><span class="Unity"></span></span>
-        </li>
-        <li><h3>Unreal Engine (20% pas begonnen)</h3>
-            <span class="bar"><span class="Unreal"></span></span>
-        </li>
-        <li><h3>C# (40%)</h3>
-            <span class="bar"><span class="C"></span></span>
-        </li>
-        <li><h3>html (88%)</h3>
-            <span class="bar"><span class="html"></span></span>
-        </li>
-        <li><h3>css (80%)</h3>
-            <span class="bar"><span class="css"></span></span>
-        </li>
-    </div>  
-    <div class="balkSkillsS test2">
-        <h2>Soft skills</h2>
-        <li><h3>Communicatie (95%)</h3>
-            <span class="bar"><span class="Communicatie"></span></span>
-        </li>
-        <li><h3>Samen Werken (90%)</h3>
-            <span class="bar"><span class="Samen"></span></span>
-        </li>
-        <li><h3>Zelfstandig Werken (83%)</h3>
-            <span class="bar"><span class="Zelfstandig"></span></span>
-        </li>
-        <li><h3>Creativiteit (70%)</h3>
-            <span class="bar"><span class="Creativitie"></span></span>
-        </li>
-    </div> 
-    <div class="tweede">
-        <h1 class="titleA">Meer over mij</h1>
-    </div>                 
-    <!-- <div class="mh-pregress mh-progress-circle" data-progress="83"></div>
-    <div class="pr-skill-name">Zelfstandig Werken</div> -->
-                            
-    <!-- <div class="mh-pregress mh-progress-circle" data-progress="95"></div>
-    <div class="pr-skill-name">Creativitie</div> -->
-    
-    <div class="mText">
-        <p>
-            Als je al gelezen hebt mijn naam is Samantha van der Heijden, <br>
-            ik woon in Liessel. <br>
-            Momenteel zit ik op het SintLucas voor de opleiding Software Developer <br>
-            en dan vooral in de Game richting. <br>
-            Hier voor zat ik op het Citaverde Collage Horst VMBO. <br>
-            Ik doe deze opleiding vanwege hier echt me interese zit <br> 
-            en hoop om er een toekomst van te maken. <br>
-            Zelf doe ik ook nog aan sport ik zit bij de Reddingsbrigade in Deurne.
-        </p>
-    </div>
-    <!--Einde tweede-->
-    <!--Begin envolope contact-->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>E-mail: sa.van.der.heijden@sintlucasedu.nl</p>
-            <a class="EnvoMail" href="mailto:sa.van.der.heijden@sintlucasedu.nl"><span>Stuur een e-mail</span></a>
-            <img src="images/envalopeBlue.png" alt="Contact Envalope">
-        </div>
-    </div>
-    <!--Einde envolope contact-->
+        <!--Einde projecten-->
+        <!--Begin over mij-->
+        
+        <!--Einde over mij-->
+        <!--Begin envolope contact-->
+        
+        <!--Einde envolope contact-->
+    </main>
     <!--Begin Footer-->
-    <footer>
-        <div class="foot">
-            <p>Stuur me een mail</p> <br>
-            <a href="mailto:sa.van.der.heijden@sintlucasedu.nl">Klik hier</a>
-        </div>
-    </footer>
+    
     <!--Einde Footer-->
+    <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
