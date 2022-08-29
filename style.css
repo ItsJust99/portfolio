@@ -331,6 +331,10 @@ nav ul ul li a{
     opacity: 1;
     visibility: visible;
 }
+#myTurtleBtn{
+    background: none;
+    border: none;
+}
 .portfolio__popup-inner{
     background-color: var(--box-color);
     width: 900px;
@@ -345,7 +349,7 @@ nav ul ul li a{
 .portfolio__popup-close{
     z-index: 20;
     position: absolute;
-    top: 3.5rem;
+    top: 7.5rem;
     right: 33.5rem;
     font-size: 2rem;
     color: #fff;
