@@ -5,24 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Samantha's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/iconWebsite.PNG"/>
 </head>
 <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div class="loader">
+        <img src="images/CatloaderBG.gif" alt="aan het laden Zzz">
+    </div>
     <header>
         <nav>
             <div class="logo">Samantha van der Heijden</div>
             <ul>
                 <li>
-                    <a href="#">Taal</a>
+                    <a href="#">Languag</a>
                     <ul>
                         <li><a href="PortfolioDE.html">Deutsch</a></li>
                         <li><a href="PortfolioEN.html">English</a></li>
                         <li><a href="index.html">Nederlands</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="mailto:sa.van.der.heijden@sintlucasedu.nl">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <main class="main">
+        <!--Begin home-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="images/profielfoto.jpeg" alt="" class="home__img">
+                <div class="home__date">
+                    <h1 class="home__title">Samantha van der Heijden</h1>
+                    <h2 class="home__subtitle">Software Developer</h2>
+                    <p class="home__description">I am Samantha, 19 years old, <br>
+                     and I am studying Software Development. <br>
+                     I am currently in my third year at SintLucas. <br>
+                     My main focus is on game development. <br>
+                     I also speak three languages: Dutch, English, and German.
+                    </p>
+                    <a href="#meerInfo" class="button">More about me.</a>
+                </div>
+            </div>
+        </section>
+        <!--Einde home-->
+        <!--Begin Projecten-->
+
+        <section class="work section" id="work">
+            <h2 data heading="My Portfolio"class="section__title">Projects</h2>
+            <div class="work__conatiner container grid">
+                <div class="con">
+                <div class="work__card mix web">
+                    <img src="images/nieuwTodoWeb.png" alt="webTodo" class="work__img">
+                    <div class="portfolio__popup-subtitle">Todo website</div>
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">Functional todo website</h3>
+                            <p class="details__description">
+                                On this website, you can add, edit, mark as completed, and delete todos. 
+                                This was my first time working with JavaScript and jQuery as I had previous experience with HTML and CSS, 
+                                which gave me a better understanding of them. <br>
+                            </p>
+                            <ul class="details__info">
+                                <li>When - <span>mbo education year 1</span></li>
+                                <li>With what - <span>jQuery, JavaScript, html, and css.</span></li>
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="work__card mix games">
+                    <img src="images/Tank3.png" alt="tank" class="work__img">
+                    <div class="portfolio__popup-subtitle">AR Game</div>
+                            <div class="portfolio__popup-body">
+                                <h3 class="details__title">Mobile AR Tank Game</h3>
+                                <p class="details__description">
+                                    This is a mobile AR tank game designed for your phone. Once you scan the image, a tank will appear on the screen. 
+                                    You can drive the tank around and shoot bullets. 
+                                    One of the main challenges I encountered was getting the joystick controller to work properly. <br>
+                                </p>
+                                <ul class="details__info">
+                                    <li>When - <span>mbo education year 2</span></li>
+                                    <li>With what - <span>Unity and C#</span></li>
+                                </ul>
+                            </div> 
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="images/TodoApp.png" alt="AppTodo" class="work__img">
+                    <div class="portfolio__popup-subtitle">App</div>
+                            <div class="portfolio__popup-body">
+                                <h3 class="details__title">Todo App</h3>
+                                <p class="details__description">
+                                    This app functions almost the same as the website version, with the only difference being that you cannot edit the text here. 
+                                    One of the main difficulties I faced was ensuring that the todos were actually saved properly.<br>
+                                </p>
+                                <ul class="details__info">
+                                    <li>When - <span>mbo education year 2</span></li>
+                                    <li>With what - <span>Unity and C#</span></li>
+                                </ul>
+                            </div>
+                </div>
+
+                <div class="work__card mix game">
+                    <img src="images/PianoMandenssss.png" alt="piano" class="work__img">
+                    <div class="portfolio__popup-subtitle">Game</div>
+                            <div class="portfolio__popup-body">
+                                <h3 class="details__title">Piano Madness</h3>
+                                <p class="details__description">
+                                    This piano can be played using your keyboard or mouse. It also has a preview button to automatically play a melody. 
+                                    In this project, it was my first time using sound in Unity. <br>
+                                </p>
+                                <ul class="details__info">
+                                    <li>When - <span>mbo education year 1</span></li>
+                                    <li>With what - <span>Unity and C#</span></li>
+                                    <li>Live Demo - <span><a href="https://itsjust99.github.io/PianoLive/">klick hier</a></span></li>
+                                </ul>
+                            </div>
+                </div>
+
+                <div class="work__card mix games">
+                    <img src="images/TurtleDash.png" alt="Turtle Dash" class="work__img">
+                    <div class="portfolio__popup-subtitle">Arcade Game</div>
+                            <div class="portfolio__popup-body">
+                                <h3 class="details__title">Turtle Dash</h3>
+                                <p class="details__description">
+                                    During this project, I collaborated with a group consisting of 3 artists and 1 other developer. 
+                                    I learned a lot about Unity itself and the experience of working with people from different educational backgrounds. <br>
+                                </p>
+                                <ul class="details__info">
+                                    <li>When - <span>mbo education year 2</span></li>
+                                    <li>With what - <span>Unity and C#</span></li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+        </section> 
+        <!--Begin over mij-->
+        <section class="about section" id="about">
+            <br>
+            <h2 class="section__title">About Me :)</h2>
+            <div class="about__container container grid">
+                <img src="images/iconWebsite.PNG" alt="drawing me" class="about__img">
+                <div class="about__data">
+                    <h3 class="about__heading">Who am I?</h3>
+                    <p class="about__description">My name is Samantha, as you already know. <br> 
+                        Before pursuing this program, I completed my secondary education at Citaverder VMBO with a focus on the green sector. 
+                        I am highly interested and motivated to pursue a career in software development. In my free time, I enjoy swimming 
+                        and I am a member of the lifeguard association.</p>
+                </div>
+                <a href="mailto:sa.van.der.heijden@sintlucasedu.nl" class="about__button">Contact</a>
+            </div>
+        </section>
+        <!--Einde over mij-->
+        <!--Begin envolope contact-->
+        
+        <!--Einde envolope contact-->
+    </main>
+    <!--Begin Footer-->
+    
+    <!--Einde Footer-->
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

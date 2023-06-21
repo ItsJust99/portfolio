@@ -389,7 +389,55 @@ nav ul ul li a{
 
 /*Eind projechten*/
 /*Begin over mij*/
+.about__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
+.about__img{
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+.about__heading{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+.about__description{
+    text-align: justify;
+    padding-right: 6rem;
+    margin-bottom: var(--mb-2);
+}
 
+.about__button{
+    text-align: justify;
+    padding-right: 6rem;
+    column-gap: .5rem;
+    background-color: var(--skin-color);
+    padding: .75rem 1.4rem;
+    border-radius: .25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+}
+.about__button::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--box-color);
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    border-radius: .25rem;
+    transition: .4s;
+}
+.about__button:hover::after{
+    transform: scale(1);
+}
 /*Eind over mij*/
 /*Begin envolope contact*/
 
