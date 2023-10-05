@@ -24,19 +24,43 @@ let mixerPortfolio = mixitup('.work__container', {
 
 //cookie popup
 // JavaScript to handle cookie banner
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        while (cookie.charAt(0) == ' ') {
+            cookie = cookie.substring(1, cookie.length);
+        }
+        if (cookie.indexOf(nameEQ) == 0) {
+            return cookie.substring(nameEQ.length, cookie.length);
+        }
+    }
+    return null;
+}
+
 document.getElementById("accept-cookies").addEventListener("click", function () {
-    // Set a cookie to remember user's choice
-    document.cookie = "cookiesAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    // Set a cookie to remember user's choice for 365 days (adjust as needed)
+    setCookie("cookiesAccepted", "true", 365);
 
     // Remove the cookie banner
     document.getElementById("cookie-banner").style.display = "none";
 });
 
 // Check if the user has already accepted cookies
-if (document.cookie.indexOf("cookiesAccepted=true") !== -1) {
+if (getCookie("cookiesAccepted") === "true") {
     document.getElementById("cookie-banner").style.display = "none";
 }
-
 // let popUp = document.getElementById("cookiePopup");
 // document.getElementById("acceptCookie");
 // addEventListener("click", () => {
