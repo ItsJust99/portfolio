@@ -175,6 +175,52 @@ nav ul ul li a{
     
 } */
 /*Eind main*/
+/*begin cookie*/
+#cookiePopup{
+    background-color: #fff;
+    position: absolute;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42.85em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+}
+#cookiePopup p{
+    text-align: center;
+    color: #000000;
+    margin: 1.4em 0;
+}
+#cookiePopup button{
+    background-color: #6859fe;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+#cookiePopup a{
+    color: #6859fe;
+}
+.hide{
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+.show{
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+/*Eind cookie*/
 /*Begin home */
 .home{
     background: url('images/home-bg.PNG');
