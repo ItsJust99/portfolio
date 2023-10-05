@@ -32,11 +32,77 @@
             </ul>
         </nav>
     </header>
+    <head>
+        <style>
+            /* Add your custom styles here */
+            .cookie-banner {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #333;
+                color: #fff;
+                padding: 15px;
+                text-align: center;
+                z-index: 1000;
+            }
+    
+            .cookie-banner button {
+                background-color: #6859fe;
+                border: none;
+                color: #fff;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
     <body>
         <div class="cookie-banner" id="cookie-banner">
             <p>This website uses cookies to ensure you get the best experience on our website.</p>
             <button id="accept-cookies">Accept</button>
         </div>
+    
+        <script>
+            // JavaScript to handle cookie banner
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+    
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i];
+                    while (cookie.charAt(0) == ' ') {
+                        cookie = cookie.substring(1, cookie.length);
+                    }
+                    if (cookie.indexOf(nameEQ) == 0) {
+                        return cookie.substring(nameEQ.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+    
+            document.getElementById("accept-cookies").addEventListener("click", function () {
+                // Set a cookie to remember user's choice for 365 days (adjust as needed)
+                setCookie("cookiesAccepted", "true", 365);
+    
+                // Remove the cookie banner
+                document.getElementById("cookie-banner").style.display = "none";
+            });
+    
+            // Check if the user has already accepted cookies
+            if (getCookie("cookiesAccepted") === "true") {
+                document.getElementById("cookie-banner").style.display = "none";
+            }
+        </script>
+    
         <!-- <div id="cookiePopup">
             <p>
                 My website uses cookies to (eat) provide your browsing experience and relevant information.
