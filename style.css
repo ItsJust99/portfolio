@@ -176,7 +176,31 @@ nav ul ul li a{
 } */
 /*Eind main*/
 /*begin cookie*/
-#cookiePopup{
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-banner button {
+    background-color: #6859fe;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+
+/* #cookiePopup{
     background-color: #fff;
     position: absolute;
     font-size: 14px;
@@ -219,7 +243,7 @@ nav ul ul li a{
     visibility: visible;
     bottom: 2em;
     right: 2em;
-}
+} */
 /*Eind cookie*/
 /*Begin home */
 .home{
