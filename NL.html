@@ -1,189 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Tiles.css">
-    <title>Samantha's portfolio</title>
-    <link rel="icon" type="image/png" href="Images/Icon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Samantha's portfolio</title>
+  <link rel="icon" type="image/png" href="Images/Icon.png"/>
 </head>
 <body>
-    <body class="vh-100">
-        <!--Navbar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
-            <div class="container">
-                <!--Name-->
-              <a class="navbar-brand fs-4" href="#">Samantha van der Heijden</a>
-              <!--Toggle-->
-              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <!--Sidebar-->
-              <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!--Sidebar Header-->
-                <div class="offcanvas-header text-white border-bottom">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Samantha van der Heijden</h5>
-                  <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!--Sidebar Body-->
-                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-                  <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                    <li class="nav-item mx-2">
-                      <a class="nav-link" id="home-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                      <a class="nav-link" id="project-link" href="#project">Projects</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" id="about-link" href="#about">About</a>
-                    </li>
-                  </ul>
-                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
-                        <a class="nav-link" href="mailto:sa.van.der.heijden@sintlucasedu.nl">Contact</a>
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Language
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">English</a></li>
-                                <li><a class="dropdown-item" href="NL.html">Nederlands</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </nav>
-        <!--Custum Scrollbar-->
-        <div id="progressbar"></div>
-        <div id="scrollpath"></div>
-        <!--FireWorksBackground Homepage-->
-        <canvas id="Canvas"></canvas>
-        <!--Home page-->
-        <section class="home py-5 d-flex align-items-center vh-100">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <h1 style="font-size: 4rem;">I'm Samantha,</h1>  
-                <h3 style="font-size: 2rem;">Software Developer</h3>
-                <p>I'm currently 20 years old. <br> And I'm stugying software development at Sintlucas. <br> My main focus is on game development. </p>
-                <div class="btn-box">
-                  <a href="#about" class="btn btn-outline-light">About Me</a>
-                  <a href="mailto:sa.van.der.heijden@sintlucasedu.nl" class="btn btn-outline-light">Contact Me</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="img-box text-center">
-                  <img src="Images/HomeImage.png" class="img-fluid" alt="Image of Samantha">
-                </div>
-              </div>
-            </div>
+  <body class="vh-100">
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+          <!--Name-->
+        <a class="navbar-brand fs-4" href="#">Samantha van der Heijden</a>
+        <!--Toggle-->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Sidebar-->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!--Sidebar Header-->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Samantha van der Heijden</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        </section>
-        <!--Grid for hovering start of website-->
-        <div id="rectangle" class="parent">
-          <div class="tile">C</div>
-          <div class="tile">L</div>
-          <div class="tile">I</div>
-          <div class="tile">C</div>
-          <div class="tile">K</div>
-          <div class="tile"></div>
-          <div class="tile">T</div>
-          <div class="tile">O</div>
-          <div class="tile"></div>
-          <div class="tile">D</div>
-          <div class="tile">I</div>
-          <div class="tile">S</div>
-          <div class="tile">C</div>
-          <div class="tile">O</div>
-          <div class="tile">V</div>
-          <div class="tile">E</div>
-          <div class="tile">R</div>
+          <!--Sidebar Body-->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="home-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="project-link" href="#project">Projecten</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link" id="about-link" href="#about">Over mij</a>
+              </li>
+            </ul>
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
+                  <a class="nav-link" href="mailto:sa.van.der.heijden@sintlucasedu.nl">Contact</a>
+                  <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Taal
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="index.html">English</a></li>
+                          <li><a class="dropdown-item" href="NL.html">Nederlands</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-        <!--Projects-->
-        <section id="project" class="home py-5 d-flex align-items-start justify-content-center">
-          <div class="container">
-              <div class="row">
-                  <div class="col-12 text-center">
-                      <h1 style="font-size: 4rem; padding-top: 2%">Projects</h1>  
-                  </div>
-              </div>
-              <div class="row g-4" style="padding-top: 2%;">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                  <div class="card bg-dark text-black">
-                    <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal1">
-                      <img src="Images/PlaceHolders/PlaceHolderCatGame.png" class="card-img" alt="CatGame">
-                      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                          <h5 class="card-title text-center">Coming Soon</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-                <!-- Card 2 
-                <div class="col-md-4">
-                  <div class="card bg-dark text-black">
-                    <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal2">
-                      <img src="Images/PlaceHolders/Tamplete2.png" class="card-img" alt="Project 2">
-                      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                          <h5 class="card-title text-center">Project 2</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div> -->
-                <!-- Card 3 
-                <div class="col-md-4">
-                  <div class="card bg-dark text-black">
-                    <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal3">
-                      <img src="Images/PlaceHolders/Tamplete3.png" class="card-img" alt="Project 3">
-                      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                          <h5 class="card-title text-center">Project 3</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div> -->
-                 <!-- Card 4 -->
-                 <div class="col-md-4">
-                  <div class="card bg-dark text-black">
-                    <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal4">
-                      <img src="Images/Space.png" class="card-img" alt="Project GameDesign">
-                      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                          <h5 class="card-title text-center">Project GameDesign</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-                 <!-- Card 5 -->
-                 <div class="col-md-4">
-                  <div class="card bg-dark text-black">
-                    <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal5">
-                      <img src="Images/TurtleDash/TurtleDashStart.png" class="card-img" alt="Project Turtle Dash">
-                      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                          <h5 class="card-title text-center">Project Turtle Dash</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-                 <!-- Card 6 -->
-                 <div class="col-md-4">
-                  <div class="card bg-dark text-black">
-                    <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal6">
-                      <img src="Images/PianoMandenssss.png" class="card-img" alt="Project Piano">
-                      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                          <h5 class="card-title text-center">Project Piano</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
+      </div>
+    </nav>
+    <!--Custum Scrollbar-->
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <!--FireWorksBackground Homepage-->
+    <canvas id="Canvas"></canvas>
+    <!--Home page-->
+    <section class="home py-5 d-flex align-items-center vh-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 style="font-size: 4rem;">Ik ben Samantha,</h1>  
+            <h3 style="font-size: 2rem;">Software Developer</h3>
+            <p>Momenteel ben ik 20 jaar. <br> En ik studeer software development bij Sintlucas. <br> Mijn hoofdrichting is game development. </p>
+            <div class="btn-box">
+              <a href="#about" class="btn btn-outline-light">Over mij</a>
+              <a href="mailto:sa.van.der.heijden@sintlucasedu.nl" class="btn btn-outline-light">Neem contact op</a>
+            </div>
           </div>
-        </section>
-        <!--Modal part-->
+          <div class="col-md-6">
+            <div class="img-box text-center">
+              <img src="Images/HomeImage.png" class="img-fluid" alt="Image of Samantha">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!--Projects-->
+    <section id="project" class="home py-5 d-flex align-items-start justify-content-center">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 style="font-size: 4rem; padding-top: 2%">Projecten</h1>  
+            </div>
+        </div>
+        <div class="row g-4" style="padding-top: 2%;">s
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-black">
+              <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                <img src="Images/PlaceHolders/PlaceHolderCatGame.png" class="card-img" alt="CatGame">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title text-center">Komt binnekort</h5>
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 
+          <div class="col-md-4">
+            <div class="card bg-dark text-black">
+              <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                <img src="Images/PlaceHolders/Tamplete2.png" class="card-img" alt="Project 2">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title text-center">Project 2</h5>
+                </div>
+              </button>
+            </div>
+          </div> -->
+          <!-- Card 3 
+          <div class="col-md-4">
+            <div class="card bg-dark text-black">
+              <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                <img src="Images/PlaceHolders/Tamplete3.png" class="card-img" alt="Project 3">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title text-center">Project 3</h5>
+                </div>
+              </button>
+            </div>
+          </div> -->
+           <!-- Card 4 -->
+           <div class="col-md-4">
+            <div class="card bg-dark text-black">
+              <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                <img src="Images/Space.png" class="card-img" alt="Project GameDesign">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title text-center">Project GameDesign</h5>
+                </div>
+              </button>
+            </div>
+          </div>
+           <!-- Card 5 -->
+           <div class="col-md-4">
+            <div class="card bg-dark text-black">
+              <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                <img src="Images/TurtleDash/TurtleDashStart.png" class="card-img" alt="Project Turtle Dash">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title text-center">Project Turtle Dash</h5>
+                </div>
+              </button>
+            </div>
+          </div>
+           <!-- Card 6 -->
+           <div class="col-md-4">
+            <div class="card bg-dark text-black">
+              <button class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                <img src="Images/PianoMandenssss.png" class="card-img" alt="Project Piano">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title text-center">Project Piano</h5>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Modal part-->
         <!--1
         <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -328,7 +307,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Project Made in Year 3: GameDesign Space</p>
+                <p>Project gemaakt in leerjaar 3: GameDesign Space</p>
                 <div id="carouselProject4" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators"> <!--
                     <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -355,11 +334,11 @@
                     <span class="visually-hidden">Next</span>
                   </button> -->
                 </div>
-                <p>In this project, I developed a 3D first-person shooter game with some parkour elements. I focused heavily on sound design and lighting throughout the game.</p> 
-                <p>During this project, I learned how to use Scriptable Objects in Unity and gained deeper knowledge of 3D animations, as well as deeper understanding of sound and lighting techniques.</p>
+                <p>In dit project heb ik een 3D first-person shooter game ontwikkeld met enkele parkour-elementen. Ik heb me sterk gefocust op geluid en verlichting gedurende het hele spel.</p> 
+                <p>Tijdens dit project heb ik geleerd hoe ik Scriptable Objects in Unity kan gebruiken en heb ik meer kennis opgedaan over 3D-animaties, evenals een dieper begrip van geluids- en verlichtingen.</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
               </div>
             </div>
           </div>
@@ -373,7 +352,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Project Made in Year 2: Group Project Arcade</p>
+                <p>Project gemaakt in leerjaar 2: Groep Project Arcade</p>
                 <div id="carouselProject5" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -400,11 +379,11 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-                <p>I worked on this arcade game with a team of five —three artists and two developers. My role involved coding the start screen, as well as programming the player and health systems. </p> 
-                <p>Through this project, I gained a deeper understanding of Unity, learning how 2D animations work, how to handle scaling, and how to effectively use the UI. We also had excellent teamwork and strong communication throughout the project, which made the development process smooth and efficient.</p>
+                <p>Ik heb aan dit arcadespel gewerkt met een team van vijf — drie tekenaars en twee developers. Mijn rol bestond uit het coderen van het startscherm en het programmeren van de speler- en healt systemen.</p> 
+                <p>Door dit project heb ik een dieper begrip van Unity gekregen, waarbij ik heb geleerd hoe 2D-animaties werken, hoe je omgaat met schaalvergroting en hoe je de UI effectief kunt gebruiken. We hadden ook uitstekend teamwerk en sterke communicatie gedurende het hele project, wat het ontwikkelproces soepel en efficiënt maakte.</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
               </div>
             </div>
           </div>
@@ -418,7 +397,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Project Made in Year 1: Unity Piano</p>
+                <p>Project gemaakt in leerjaar 1: Unity Piano</p>
                 <div id="carouselProject6" class="carousel slide" data-bs-ride="carousel">
                 <!-- <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselProject6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -445,51 +424,50 @@
                     <span class="visually-hidden">Next</span>
                   </button>--> 
                 </div>
-                <p>This piano was created during my first year of school. It was a significant learning experience for me as its my first experience working with sound in Unity, where I learned the basics of audio design.</p> 
-                <p>The piano is fully playable using either the keyboard or mouse. The keys for playing are: Caps Lock, A, S, D, F, G, H, J, K, L, Q, W, R, T, Y, I, O. <br>Here's a <a href="https://itsjust99.github.io/PianoLive/">live demo of the project</a></p>
+                <p>Deze piano is gemaakt tijdens mijn eerste jaar op school. Het was een goede leerervaring voor mij, omdat het mijn eerste kennismaking was met het werken met geluid in Unity, waar ik de basis van audio Unity heb geleerd.</p> 
+                <p>De piano is volledig bespeelbaar met zowel het toetsenbord als de muis. De toetsen voor het spelen zijn: Caps Lock, A, S, D, F, G, H, J, K, L, Q, W, R, T, Y, I, O. <br>Hier is een <a href="https://itsjust99.github.io/PianoLive/">live demo van het project</a></p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
               </div>
             </div>
           </div>
         </div>
-        <!--About Me-->
-        <section id="about" class="home py-5 d-flex align-items-start justify-content-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h1 style="font-size: 4rem; padding-top: 2%">About</h1>  
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 d-flex justify-content-center">
-                <img src="Images/ImageAboutMe.png" alt="Image Samantha" style="transform: rotate(30deg); width: 55%; max-width: none; margin-top: 15%;">
-              </div>
-              <div class="col-md-6 d-flex align-items-center">
-                <div>
-                  <p style="font-size: 1.2rem;">Hi! I'm Samantha, a software development student with a passion for creating fun games. While game development is my primary focus, I also enjoy making web projects, like this portfolio. My enthusiasm for gaming is what led me to pursue a career in this industry, and I'm eager to learn more and improve my skills to develop games that everyone can enjoy :)</p>
-                  <p style="font-size: 1.2rem;">In my free time, I enjoy staying active through swimming (with the rescue brigade) and fitness. I also love reading, and listening to music to stay focused and enjoying my time.</p>
-                </div>
-              </div>
+    <!--About Me-->
+    <section id="about" class="home py-5 d-flex align-items-start justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 style="font-size: 4rem; padding-top: 2%">About</h1>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-center">
+            <img src="Images/ImageAboutMe.png" alt="Image Samantha" style="transform: rotate(30deg); width: 55%; max-width: none; margin-top: 15%;">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div>
+              <p style="font-size: 1.2rem;">Hoi! Ik ben Samantha, een student softwareontwikkeling met een passie voor het maken van leuke games. Hoewel gameontwikkeling mijn voornaamste focus is, vind ik het ook leuk om webprojecten te maken, zoals deze portfolio. Mijn enthousiasme voor gamen heeft me ertoe gebracht om een carrière in deze industrie na te streven, en ik ben ernaar uit om meer te leren en mijn vaardigheden te verbeteren, zodat ik games kan ontwikkelen die iedereen leuk vindt. :)</p>
+              <p style="font-size: 1.2rem;">In mijn vrije tijd blijf ik graag actief door te zwemmen (met de reddingsbrigade) en te fitnessen. Ik houd ook van lezen en naar muziek luisteren om gefocust te blijven en van mijn tijd te genieten.</p>
             </div>
           </div>
-        </section>
-        <!--Footer-->
-        <footer>
-          <div class='row'></div>
-            <div class='col-md-12'>
-                <ul>
-                  <li class="copyright"><p>© Samantha van der Heijden, all rights reserved.</p></li>
-                  <li><a href='mailto:sa.van.der.heijden@sintlucasedu.nl'><img src='Images/Email.png' alt='Email'><br>E-mail</a></li>
-                  <li><a href='https://www.linkedin.com/in/samantha-van-der-heijden-6b0618292/'><img src='Images/LinkedIn.png' alt='LinkedIn'><br>LinkedIn</a></li>
-                </ul>
-            </div>
-          </div>
-        </footer>
-        <!--Link JavaScript-->
-        <script src="script.js"></script>
-    </body>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class='row'></div>
+        <div class='col-md-12'>
+            <ul>
+              <li class="copyright"><p>© Samantha van der Heijden, all rights reserved.</p></li>
+              <li><a href='mailto:sa.van.der.heijden@sintlucasedu.nl'><img src='Images/Email.png' alt='Email'><br>E-mail</a></li>
+              <li><a href='https://www.linkedin.com/in/samantha-van-der-heijden-6b0618292/'><img src='Images/LinkedIn.png' alt='LinkedIn'><br>LinkedIn</a></li>
+            </ul>
+        </div>
+      </div>
+    </footer>
+    <!--Link JavaScript-->
+    <script src="script.js"></script>
+  </body>
 </body>
 </html>
-
