@@ -109,9 +109,27 @@ function Run() {
 // Generates the grid and gives each tile an id and a class
 const grid = document.getElementById('rectangle');
 const numTiles = 1000; // Number of tiles
-const tiles = []; // Tiles array
+const tiles = [
+    { name: 'tile0', destroyed: false },
+    { name: 'tile1', destroyed: false },
+    { name: 'tile2', destroyed: false },
+    { name: 'tile3', destroyed: false },
+    { name: 'tile4', destroyed: false },
+    { name: 'tile5', destroyed: false },
+    { name: 'tile6', destroyed: false },
+    { name: 'tile7', destroyed: false },
+    { name: 'tile8', destroyed: false },
+    { name: 'tile9', destroyed: false },
+    { name: 'tile10', destroyed: false},
+    { name: 'tile11', destroyed: false },
+    { name: 'tile12', destroyed: false },
+    { name: 'tile13', destroyed: false },
+    { name: 'tile14', destroyed: false },
+    { name: 'tile15', destroyed: false },
+    { name: 'tile16', destroyed: false }
+]; // Tiles array
 
-for (let i = 0; i < numTiles; i++) {
+for (let i = 17; i < numTiles; i++) {
     const tile = document.createElement('div');
     tile.classList.add('tile');
     grid.appendChild(tile);
