@@ -89,6 +89,15 @@ canvas {
 
 /* The Tiles are moved to an other css file */
 
+/* Cards solid black behind text for projects */
+.card-title {
+    color: white; 
+    border: 2px solid black; 
+    padding: 10px;
+    background-color: black; 
+    display: inline-block; 
+}
+
 /* Footer */
 footer {
     z-index: 10;
